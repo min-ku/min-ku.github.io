@@ -48,8 +48,8 @@
                 </div>
                 <div class="columns is-centered">
                     <div class="column is-4">
-                        <div class="content" style="justify-content: center; align-items: center; display: flex;">
-                                <img src="images/eval.png" style="height: 15em; width: 100%;"/>
+                        <div class="content" style="justify-content: center; align-items: center; display: flex;">    
+                            <img src="images/eval.gif" style="height: 15em; width: auto; max-width: 100%;" alt="Evaluation GIF" />
                         </div>
                     </div>
                     <div class="column">
@@ -69,7 +69,7 @@
                 <div class="columns is-centered">
                     <div class="column is-4">
                         <div class="content" style="justify-content: center; align-items: center; display: flex;">
-                            <video style="height: 15em; width: 100%;" controls autoplay loop muted>
+                            <video style="height: 15em; width: auto; max-width: 100%;" controls autoplay loop muted>
                                 <source src="images/obstacle.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -97,7 +97,7 @@
                 <div class="columns is-centered">
                     <div class="column is-4">
                         <div class="content" style="justify-content: center; align-items: center; display: flex;">
-                            <video style="height: 15em; width: 100%;" controls autoplay loop muted>
+                            <video style="height: 15em; width: auto; max-width: 100%;" controls autoplay loop muted>
                                 <source src="images/manipulator.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -119,7 +119,7 @@
                 <div class="columns is-centered">
                     <div class="column is-4">
                         <div class="content" style="justify-content: center; align-items: center; display: flex;">
-                            <video style="height: 15em; width: 100%;" controls autoplay loop muted>
+                            <video style="height: 15em; width: auto; max-width: 100%;" controls autoplay loop muted>
                                 <source src="images/mobile.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -138,10 +138,20 @@
                     </div>
                     </div>
                 </div>
+
+                <!-- Show More Button -->
+                <div class="columns is-centered" style="margin-top: 2em;">
+                    <div class="column has-text-centered">
+                    <button class="button is-small is-link is-light" onclick="toggleOldProjects()">Show Older Projects</button>
+                    </div>
+                </div>
+
+                <div id="old-projects" style="display: none;">
+
                 <div class="columns is-centered">
                     <div class="column is-4">
                         <div class="content" style="justify-content: center; align-items: center; display: flex;">
-                            <video style="height: 15em; width: 100%;" controls autoplay loop muted>
+                            <video style="height: 15em; width: auto; max-width: 100%;" controls autoplay loop muted>
                                 <source src="images/4DOF.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -162,7 +172,7 @@
                 <div class="columns is-centered">
                     <div class="column is-4">
                         <div class="content" style="justify-content: center; align-items: center; display: flex;">
-                            <img src="images/solar.png" style="height: 15em; width: 100%;" />
+                            <img src="images/solar.png" style="height: 15em; width: auto; max-width: 100%;" />
                         </div>
                     </div>
                     <div class="column">
@@ -183,7 +193,7 @@
                 <div class="columns is-centered">
                     <div class="column is-4">
                         <div class="content" style="justify-content: center; align-items: center; display: flex;">
-                            <img src="images/abuse.png" style="height: 15em; width: 100%;" />
+                            <img src="images/abuse.png" style="height: 15em; width: auto; max-width: 100%;" />
                         </div>
                     </div>
                     <div class="column">
@@ -201,6 +211,7 @@
                     </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -226,4 +237,17 @@
             </div>
         </footer>
     </body>
+    <script>
+        function toggleOldProjects() {
+          const section = document.getElementById("old-projects");
+          const button = event.target;
+          if (section.style.display === "none") {
+            section.style.display = "block";
+            button.textContent = "Hide Older Projects";
+          } else {
+            section.style.display = "none";
+            button.textContent = "Show Older Projects";
+          }
+        }
+      </script>
 </html>
