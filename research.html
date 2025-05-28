@@ -50,6 +50,29 @@
                     <div class="column is-4">
                         <div class="content" style="justify-content: center; align-items: center; display: flex;">
                             <video style="height: 15em; width: 100%;" controls autoplay loop muted>
+                                <source src="images/pose.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <h3 class="title is-4">
+                                Real-time 6D Object Pose and Shape Estimation via Active Shape Models and ADMM
+                            </h3>
+                            <p>
+                                This research introduces a real-time framework for simultaneous 6D object pose tracking and shape estimation in dynamic, real-world environments.
+                                The system combines Active Shape Models with ADMM-based point cloud registration to handle occlusions, deformations, and shape variability without requiring CAD models.
+                                A novel SVGD-based multi-hypothesis tracker over SIM(3) ensures robustness under symmetry and noise. Running at 100–200Hz on GPU,
+                                this framework enables reliable object-centric perception and closed-loop manipulation in fast-changing, human-centric tasks.
+                    
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-centered">
+                    <div class="column is-4">
+                        <div class="content" style="justify-content: center; align-items: center; display: flex;">
+                            <video style="height: 15em; width: 100%;" controls autoplay loop muted>
                                 <source src="images/cassie_walking.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -74,6 +97,15 @@
                         </div>
                     </div>
                 </div>
+                <!-- Show More Button -->
+                <div class="columns is-centered" style="margin-top: 2em;">
+                    <div class="column has-text-centered">
+                        <button class="button is-small is-link is-light" onclick="toggleOldProjects()">Show Older Research</button>
+                    </div>
+                </div>
+
+                <!-- Wrap older research in this container -->
+                <div id="old-research" style="display: none;">
                 <div class="columns is-centered">
                     <div class="column is-4">
                         <div class="content" style="justify-content: center; align-items: center; display: flex;">
@@ -82,61 +114,60 @@
                     </div>
                     <div class="column">
                         <div class="content">
-                        <h3 class="title is-4" >
+                            <h3 class="title is-4">
                             Terrain Recognition System for Wearable Device
-                        </h3>
-                        <p>
+                            </h3>
+                            <p>
                             This research develops a terrain recognition algorithm for a wearable system to support the mobility of forestry workers.
                             Utilizing a single stereo camera, the system identifies safe regions and classifies ground types in dense forest environments,
                             enabling adaptive operational mode switches for the wearable device in response to varying terrain types.
-                        </p>
-                    </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="columns is-centered">
                     <div class="column is-4">
-                        <div class="content" style="justify-content: center; align-items: center; display: flex;">
-                            <img src="images/fault.png" style="height: 15em; width: 100%;"/>
-                        </div>
+                    <div class="content" style="justify-content: center; align-items: center; display: flex;">
+                        <img src="images/fault.png" style="height: 15em; width: 100%;" />
+                    </div>
                     </div>
                     <div class="column">
-                        <div class="content">
+                    <div class="content">
                         <h3 class="title is-4">
-                            AI-based Real-Time Monitoring and Fault Diagnosis for Gear Failure in Electric Vehicle Reducers
+                        AI-based Real-Time Monitoring and Fault Diagnosis for Gear Failure in Electric Vehicle Reducers
                         </h3>
                         <p>
-                            This research constructs a real-time fault diagnosis model for monitoring gear damage in electric vehicle (EV) reducers
-                            using learning-based methods and demonstrates 98% detection. The study utilized feature extraction methods,
-                            including Wavelet Packet Decomposition (WPD), Mel-Frequency Cepstral Coefficients (MFCC),
-                            STFT-spectrogram, and Mel-spectrum features to train a Convolutional Neural Network (CNN) model.
+                        This research constructs a real-time fault diagnosis model for monitoring gear damage in electric vehicle (EV) reducers
+                        using learning-based methods and demonstrates 98% detection. The study utilized feature extraction methods,
+                        including Wavelet Packet Decomposition (WPD), Mel-Frequency Cepstral Coefficients (MFCC),
+                        STFT-spectrogram, and Mel-spectrum features to train a Convolutional Neural Network (CNN) model.
                         </p>
                     </div>
                     </div>
                 </div>
                 <div class="columns is-centered">
                     <div class="column is-4">
-                        <div class="content" style="justify-content: center; align-items: center; display: flex;">
-                            <video style="height: 15em; width: 100%;" controls autoplay loop muted>
-                                <source src="images/UAV.mp4" type="video/mp4">
-                            </video>
-                        </div>
+                    <div class="content" style="justify-content: center; align-items: center; display: flex;">
+                        <video style="height: 15em; width: 100%;" controls autoplay loop muted>
+                        <source src="images/UAV.mp4" type="video/mp4">
+                        </video>
+                    </div>
                     </div>
                     <div class="column">
-                        <div class="content">
-                        <h3 class="title is-4" >
-                            Vision-based UAV control System for Following Drones in Complex
-                            Visual Environments 
+                    <div class="content">
+                        <h3 class="title is-4">
+                        Vision-based UAV control System for Following Drones in Complex Visual Environments
                         </h3>
                         <p>
-                            This research develops a real-time (>30fps) vision-based UAV control system that combines a YOLO-based object detection algorithm with a
-                            Siamese network for tracking and following dynamic drones in complex visual environments. 
-                            The project addresses critical challenges in small object detection under limited visibility
-                            by implementing a custom small-object centric loss function and contextual region refinement methodology.
+                        This research develops a real-time (>30fps) vision-based UAV control system that combines a YOLO-based object detection algorithm with a
+                        Siamese network for tracking and following dynamic drones in complex visual environments.
+                        The project addresses critical challenges in small object detection under limited visibility
+                        by implementing a custom small-object centric loss function and contextual region refinement methodology.
                         </p>
                     </div>
                     </div>
                 </div>
-            </div>
+                </div>
         </section>
 
         <section class="section">
@@ -161,4 +192,17 @@
             </div>
         </footer>
     </body>
+    <script>
+        function toggleOldProjects() {
+          const section = document.getElementById("old-projects");
+          const button = event.target;
+          if (section.style.display === "none") {
+            section.style.display = "block";
+            button.textContent = "Hide Older Projects";
+          } else {
+            section.style.display = "none";
+            button.textContent = "Show Older Projects";
+          }
+        }
+    </script>
 </html>
