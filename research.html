@@ -50,7 +50,98 @@
                     <div class="column is-4">
                         <div class="content" style="justify-content: center; align-items: center; display: flex;">
                             <video style="height: 15em; width: 100%;" controls autoplay loop muted>
-                                <source src="images/pose.mp4" type="video/mp4">
+                                <source src="videos/humanoidhanoi.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content is-small" style="margin-top: 0em;">
+                            <h3 class="title is-5" style="margin-bottom: 0.3em;">
+                                Humanoid Hanoi: Investigating Shared Whole-Body Control for Skill-Based Box Rearrangement
+                            </h3>
+                            <p>
+                                In this work, We investigate a skill-based framework for humanoid box rearrangement that enables long-horizon execution by sequencing reusable skills at the task level.
+                                In our architecture, all skills execute through a shared, task-agnostic whole-body controller (WBC), providing a consistent closed-loop interface for skill composition,
+                                in contrast to non-shared designs that use separate low-level controllers per skill. Additionally, we introduce Humanoid Hanoi,
+                                a long-horizon Tower-of-Hanoi box rearrangement benchmark to evaluate long-horizon performance, and report results in simulation and on the Digit V3 humanoid robot, demonstrating fully autonomous
+                                rearrangement over extended horizons and quantifying the benefits of the shared-WBC approach over non-shared baselines.
+                                <br><em>
+                                    <span style="color:red;">Under Review</span>
+                                </em><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="columns is-centered">
+                    <div class="column is-4">
+                        <div class="content" style="justify-content: center; align-items: center; display: flex;">
+                            <video style="height: 15em; width: 100%;" controls autoplay loop muted>
+                                <source src="videos/sage.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content is-small" style="margin-top: 0em;">
+                            <h3 class="title is-5" style="margin-bottom: 0.3em;">
+                                SAGE: Semantic And Geometric Estimation of 6D Object Pose from Multi-View Observations
+                            </h3>
+                            <p>
+                                We introduce SAGE, a unified multi-view transformer that bridges the gap between geometric scene reconstruction and semantic object understanding.
+                                SAGE utilizes a cross-view attention mechanism to enforce 3D geometric consistency across multiple camera angles.
+                                By integrating CLIP embeddings, SAGE enables open-vocabulary object
+                                grounding from text queries without task-specific retraining. The architecture incorporates a differentiable Direct Linear
+                                Transform (DLT) for camera estimation and a differentiable Non-Maximum Suppression (NMS) layer to resolve geometric symmetries.
+                                On an NVIDIA GeForce RTX 3090 Ti, SAGE achieves up to 18 Hz for single-view and over 10 Hz for two-view 256x256 inputs,
+                                providing an efficient and modular perception framework for robotic manipulation.
+
+                                <br><em>
+                                    <span style="color:red;">Under Review</span>
+                                </em><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="columns is-centered">
+                    <div class="column is-4">
+                        <div class="content" style="justify-content: center; align-items: center; display: flex;">
+                            <video style="height: 15em; width: 100%;" controls autoplay loop muted>
+                                <source src="videos/asm.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content is-small" style="margin-top: 0em;">
+                            <h3 class="title is-5" style="margin-bottom: 0.3em;">
+                                ASM-6D: Real-Time 6D Object Pose and Shape Estimation via Active Shape Models and ADMM
+                            </h3>
+                            <p>
+                                We present ASM-6D, a framework for real-time category-level 6D pose, shape, and scale estimation from partial RGB-D observations.
+                                We bridge this gap by formulating a unified optimization problem over the SIM(3) manifold and introducing a high-throughput Matrix ADMM solver.
+                                Our approach concurrently estimates an object’s pose and shape at frequencies exceeding 100 Hz, with sub-linear
+                                scaling with respect to batch size and active shape model complexity. For learning-based keypoint detector frontends,
+                                we provide a pipeline for generating geometrically consistent keypoints, enabling the training of robust detection models
+                                without manual labeling. We demonstrate the system's reliability through global optimality certification via SDP duality
+                                and show resilience to both stochastic noise and occlusions. ASM-6D provides a mathematically rigorous and computationally
+                                efficient foundation for real-time, closed-loop robotic manipulation.
+
+                                <br><em>
+                                    <span style="color:red;">Under Review</span>
+                                </em><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="columns is-centered">
+                    <div class="column is-4">
+                        <div class="content" style="justify-content: center; align-items: center; display: flex;">
+                            <video style="height: 15em; width: 100%;" controls autoplay loop muted>
+                                <source src="videos/pose.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
@@ -81,7 +172,7 @@
                     <div class="column is-4">
                         <div class="content" style="justify-content: center; align-items: center; display: flex;">
                             <video style="height: 15em; width: 100%;" controls autoplay loop muted>
-                                <source src="images/cassie_walking.mp4" type="video/mp4">
+                                <source src="videos/cassie_walking.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
@@ -99,11 +190,12 @@
                                 elevation map and the Angular Momentum Linear Inverted Pendulum model as policy input,
                                 with a low-level Operational Space Controller (OSC) that tracks the planned trajectories.
                                 We validate our approach on the underactuated bipedal robot Cassie and show evaluations across diverse terrain conditions
-                                in both simulation and hardware experiments. <strong><a href="https://arxiv.org/abs/2508.06779" target="_blank"> [PDF]</a></strong>
+                                in both simulation and hardware experiments.
                                 <br><strong>
                                     Accepted to <a href="https://2025humanoids.org/" target="_blank">
                                     2025 IEEE-RAS 24th International Conference on Humanoid Robots <span style="color:red;">[Oral Presentation]</span></a>
                                 </strong>
+                                <br><strong><a href="https://arxiv.org/abs/2508.06779" target="_blank"> [Arxiv Link]</a></strong>
                             </p>
                         </div>
                     </div>
@@ -160,7 +252,7 @@
                     <div class="column is-4">
                     <div class="content" style="justify-content: center; align-items: center; display: flex;">
                         <video style="height: 15em; width: 100%;" controls autoplay loop muted>
-                        <source src="images/UAV.mp4" type="video/mp4">
+                        <source src="videos/UAV.mp4" type="video/mp4">
                         </video>
                     </div>
                     </div>
