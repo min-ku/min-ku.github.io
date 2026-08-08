@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <meta name="keywords" content="{{ site.keywords | escape }}">
+    <meta name="author" content="{{ site.title | escape }}">
+    {% if site.google_site_verification %}
+    <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+    {% endif %}
+
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="icon" href="{{ site.favicon | relative_url }}" type="image/jpeg">
+    <link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+    <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ site.avatar | absolute_url }}">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "{{ site.title }}",
+        "url": "{{ site.url }}",
+        "image": "{{ site.avatar | absolute_url }}",
+        "jobTitle": "{{ site.position }}",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "{{ site.affiliation }}",
+          "url": "{{ site.affiliation_link }}"
+        },
+        "sameAs": ["{{ site.github_link }}", "{{ site.linkedin }}"]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="wrapper">
+      <header class="profile">
+        <a class="image avatar profile-avatar" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+          <img src="{{ site.avatar | relative_url }}" alt="Portrait of {{ site.title }}" width="176" height="176">
+        </a>
+
+        <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+        <p class="profile-position">{{ site.position }}</p>
+
+        <div class="profile-links" aria-label="Profile links">
+          <a href="mailto:{{ site.email }}">Email</a>
+          <a href="{{ site.cv_link | relative_url }}" target="_blank" rel="noopener">CV</a>
+          <a href="{{ site.github_link }}" target="_blank" rel="noopener">GitHub</a>
+          <a href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
+          <a href="{{ '/research/' | relative_url }}"{% if page.url contains '/research/' %} aria-current="page"{% endif %}>Research</a>
+          <a href="{{ '/projects/' | relative_url }}"{% if page.url contains '/projects/' %} aria-current="page"{% endif %}>Projects</a>
+          <a href="{{ '/misc/' | relative_url }}"{% if page.url contains '/misc/' %} aria-current="page"{% endif %}>Misc</a>
+        </nav>
+      </header>
+
+      <main id="main-content">
+        {{ content }}
+
+        <footer class="site-footer">
+          {% if site.enable_footnote %}
+          <small>Based on the <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a> Jekyll theme.</small>
+          {% endif %}
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<div class="section-heading">
+  <h2 id="research">Research</h2>
+</div>
+
+<div class="publications">
+  <ol class="bibliography">
+    {% for publication in site.data.publications.main %}
+    <li>
+      <article class="pub-row">
+        <div class="abbr">
+          {% if publication.video %}
+          <video class="teaser" controls autoplay loop muted playsinline preload="auto" poster="{{ publication.image | relative_url }}">
+            <source src="{{ publication.video | relative_url }}" type="video/mp4">
+            Your browser does not support embedded video.
+          </video>
+          {% else %}
+          <img src="{{ publication.image | relative_url }}" class="teaser" alt="Preview for {{ publication.title | escape }}" loading="lazy" width="720" height="405">
+          {% endif %}
+          {% if publication.conference_short %}<abbr class="badge">{{ publication.conference_short }}</abbr>{% endif %}
+        </div>
+        <div class="pub-details">
+          <div class="title">
+            {% if publication.primary_url %}<a href="{{ publication.primary_url }}" target="_blank" rel="noopener">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}
+          </div>
+          <div class="author">{{ publication.authors }}</div>
+          {% if publication.conference %}<div class="periodical"><em>{{ publication.conference }}</em></div>{% endif %}
+          {% if publication.links.size > 0 or publication.notes %}
+          <div class="links">
+            {% for link in publication.links %}
+              <a href="{% if link.url contains '://' %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}" class="btn"{% if link.url contains '://' %} target="_blank" rel="noopener"{% endif %}>{{ link.label }}</a>
+            {% endfor %}
+            {% if publication.notes %}<span class="work-status">{{ publication.notes }}</span>{% endif %}
+          </div>
+          {% endif %}
+        </div>
+      </article>
+    </li>
+    {% endfor %}
+  </ol>
+</div>

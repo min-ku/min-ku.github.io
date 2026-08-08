@@ -1,0 +1,48 @@
+{% assign work_items = site.data[include.collection] %}
+<div class="work-list">
+  {% for item in work_items %}
+    {% assign show_item = true %}
+    {% if include.featured == 'true' and item.featured != true %}
+      {% assign show_item = false %}
+    {% endif %}
+    {% if show_item %}
+      {% capture detail_url %}/{{ include.collection }}/#{{ item.slug }}{% endcapture %}
+      <article class="work-row" id="{{ item.slug }}">
+        {% if include.show_video == 'true' and item.video %}
+        <div class="work-media">
+          <video controls autoplay loop muted playsinline preload="auto" poster="{{ item.poster | relative_url }}">
+            <source src="{{ item.video | relative_url }}" type="video/mp4">
+            Your browser does not support embedded video.
+          </video>
+        </div>
+        {% elsif include.show_video == 'true' and item.animated_image %}
+        <div class="work-media">
+          <img src="{{ item.animated_image | relative_url }}" alt="Animation of {{ item.title | escape }}" loading="lazy">
+        </div>
+        {% else %}
+        <a class="work-media" href="{{ detail_url | relative_url }}" aria-label="View {{ item.title | escape }}">
+          <img src="{{ item.poster | relative_url }}" alt="Preview of {{ item.title | escape }}" loading="lazy" width="720" height="405">
+        </a>
+        {% endif %}
+
+        <div class="work-details">
+          <p class="work-kicker">{{ item.area }}{% if item.year %} · {{ item.year }}{% endif %}</p>
+          <h3 class="work-title">
+            {% if include.compact == 'true' %}<a href="{{ detail_url | relative_url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
+          </h3>
+          <p class="work-summary">
+            {% if include.compact == 'true' and item.short_summary %}{{ item.short_summary }}{% else %}{{ item.summary }}{% endif %}
+          </p>
+          {% if item.links.size > 0 or item.status %}
+          <div class="work-links">
+            {% for link in item.links %}
+              <a class="button-link" href="{% if link.url contains '://' %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}"{% if link.url contains '://' %} target="_blank" rel="noopener"{% endif %}>{{ link.label }}</a>
+            {% endfor %}
+            {% if item.status %}<span class="work-status">{{ item.status }}</span>{% endif %}
+          </div>
+          {% endif %}
+        </div>
+      </article>
+    {% endif %}
+  {% endfor %}
+</div>

@@ -1,0 +1,42 @@
+title: Minku Kim
+position: Ph.D. Candidate in Robotics
+affiliation: Oregon State University
+affiliation_link: https://oregonstate.edu/
+email: kimminku@oregonstate.edu
+
+url: https://min-ku.github.io
+baseurl: ""
+lang: en-US
+timezone: America/Los_Angeles
+
+description: Minku Kim is a Robotics Ph.D. candidate working on reinforcement learning, robot perception, and control for legged and humanoid robots.
+keywords: robotics, reinforcement learning, legged robots, humanoid robots, robot perception, computer vision, control
+google_site_verification: 5n2ikzHyY0Ixw3yuGs1UBJnOC_GMSwsg-yeIu8MrJlI
+
+cv_link: /files/MinkuKim_CV.pdf
+github_link: https://github.com/min-ku
+linkedin: https://www.linkedin.com/in/minkukim/
+
+avatar: /images/minku.jpg
+favicon: /images/icon.jpeg
+enable_footnote: true
+auto_dark_mode: false
+
+markdown: kramdown
+permalink: pretty
+sass:
+  style: compressed
+titles_from_headings:
+  enabled: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - images/abuse.png
+  - images/eval.png
+  - images/fault.png
+  - images/forest.jpg
+  - images/image.gif
+  - images/solar.png

@@ -1,0 +1,60 @@
+- slug: go2-cbf-obstacle-avoidance
+  title: Obstacle Avoidance Using Control Barrier Functions
+  area: Quadruped Control
+  featured: true
+  poster: /assets/img/teasers/cbf.jpg
+  video: /videos/cbf.mp4
+  short_summary: >-
+    Using control barrier functions.
+  summary: >-
+    This project applies control barrier functions to obstacle identification and
+    avoidance on a Unitree Go2 quadruped. AprilTags provide obstacle observations and
+    a safety filter modifies the robot's motion to maintain collision-free behavior.
+  links: []
+
+- slug: footstep-controller-comparison
+  title: Comparative Analysis of MPC, LQR, and RL Footstep Planners on Uneven Terrain
+  area: Legged Locomotion
+  featured: true
+  poster: /assets/img/teasers/controller-comparison.jpg
+  animated_image: /images/eval.gif
+  short_summary: >-
+    A Drake-based comparison of model-predictive, LQR, and reinforcement-learning footstep planners for Cassie.
+  summary: >-
+    This project compares model-predictive control, linear-quadratic regulation, and
+    reinforcement-learning footstep planners for bipedal locomotion. Velocity tracking
+    and success rates are evaluated across varied initial conditions and uneven terrain
+    in a Drake simulation of Cassie.
+  links: []
+
+- slug: obstacle-estimation
+  title: Optimization-Based Obstacle Estimation from Human Demonstrations
+  area: Optimization and Control
+  featured: true
+  poster: /assets/img/teasers/obstacle-estimation.jpg
+  video: /videos/obstacle.mp4
+  short_summary: >-
+    Learning obstacle geometry from expert demonstrations through CLF-CBF constraints and probabilistic regression.
+  summary: >-
+    This project learns obstacle position and size from expert demonstrations using
+    control-Lyapunov and control-barrier-function constraints. Gaussian mixture models
+    and regression provide a probabilistic estimate without requiring direct obstacle sensing.
+  links:
+    - label: Paper
+      url: /files/Optimization_paper.pdf
+    - label: Poster
+      url: /files/Optimization_poster.pdf
+
+- slug: panda-pick-and-stack
+  title: Vision-Aided Pick-and-Stack with a 7-DOF Manipulator
+  area: Robot Manipulation
+  featured: true
+  poster: /assets/img/teasers/manipulator.jpg
+  video: /videos/manipulator.mp4
+  short_summary: >-
+    AprilTag perception, gradient-based inverse kinematics, and collision-aware waypoint planning for a Franka Panda.
+  summary: >-
+    This project uses real-time AprilTag feedback and gradient-based inverse kinematics
+    to pick and stack blocks with a 7-DOF Franka Emika Panda. Collision-aware waypoint
+    trajectories support both static and moving-block manipulation tasks.
+  links: []

@@ -1,0 +1,145 @@
+- slug: humanoid-hanoi
+  title: "Humanoid Hanoi: Investigating Shared Whole-Body Control for Skill-Based Box Rearrangement"
+  area: Humanoid Robotics
+  year: 2026
+  featured: true
+  status: Under Review
+  poster: /assets/img/teasers/humanoid-hanoi.jpg
+  video: /videos/humanoidhanoi.mp4
+  short_summary: >-
+    Long-horizon humanoid box rearrangement through reusable skills and a shared,
+    task-agnostic whole-body controller, validated in simulation and on Digit V3.
+  summary: >-
+    This work studies a skill-based framework for long-horizon humanoid box
+    rearrangement. Reusable skills execute through a shared, task-agnostic
+    whole-body controller, providing a consistent closed-loop interface for task-level
+    composition. Humanoid Hanoi introduces a Tower-of-Hanoi rearrangement benchmark
+    and evaluates autonomous execution in simulation and on the Digit V3 humanoid.
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2602.13850
+    - label: Project Page
+      url: https://osudrl.github.io/Humanoid_Hanoi/
+    - label: Code
+      url: https://github.com/osudrl/Humanoid_Hanoi
+
+- slug: sage
+  title: "SAGE: Semantic And Geometric Estimation of 6D Object Pose from Multi-View Observations"
+  area: Robot Perception
+  year: 2026
+  featured: true
+  status: Under Review
+  poster: /assets/img/teasers/sage.jpg
+  video: /videos/sage.mp4
+  short_summary: >-
+    A multi-view transformer combining geometric consistency and open-vocabulary
+    semantic grounding for real-time 6D object pose estimation.
+  summary: >-
+    SAGE is a unified multi-view transformer that connects geometric scene
+    reconstruction with semantic object understanding. Cross-view attention enforces
+    3D consistency, CLIP embeddings enable open-vocabulary grounding, and
+    differentiable camera estimation and non-maximum suppression address geometry
+    and symmetry. The system runs at interactive rates on RGB-D observations.
+  links: []
+
+- slug: asm-6d
+  title: "ASM-6D: Real-Time 6D Object Pose and Shape Estimation via Active Shape Models and ADMM"
+  area: Robot Perception
+  year: 2026
+  status: Under Review
+  poster: /assets/img/teasers/asm-6d.jpg
+  video: /videos/asm.mp4
+  short_summary: >-
+    Category-level pose, scale, and shape estimation formulated on SIM(3) and solved
+    with a high-throughput matrix ADMM method.
+  summary: >-
+    ASM-6D estimates category-level 6D pose, scale, and shape from partial RGB-D
+    observations. It formulates a unified optimization problem on SIM(3) and uses a
+    high-throughput matrix ADMM solver that exceeds 100 Hz. The pipeline also provides
+    geometrically consistent keypoints for learned frontends and uses SDP duality to
+    certify global optimality under noise and occlusion.
+  links: []
+
+- slug: dynamic-asm6d
+  title: "Dynamic-ASM6D: Real-Time 6D Object Pose and Shape Estimation via Active Shape Models and ADMM"
+  area: Robot Perception
+  year: 2025
+  status: RSS Workshop and IEEE-RAS TC Poster
+  poster: /assets/img/teasers/dynamic-asm6d.jpg
+  video: /videos/pose.mp4
+  short_summary: >-
+    Active shape models, ADMM registration, and multi-hypothesis tracking for robust
+    object-centric perception in dynamic environments.
+  summary: >-
+    Dynamic-ASM6D combines active shape models with ADMM-based point-cloud
+    registration to track 6D pose and shape under occlusion, deformation, and
+    category-level variation without object-specific CAD models. An SVGD-based
+    multi-hypothesis tracker on SIM(3) handles symmetry and noise at 100–200 Hz.
+  links:
+    - label: RSS Workshop
+      url: https://equisystems.github.io/index.html#accepted
+    - label: TC Poster
+      url: https://www.tcoptrob.org/news/2025-07-21/
+
+- slug: vision-footstep-planner
+  title: Learning a Vision-Based Footstep Planner for Hierarchical Walking Control
+  area: Legged Locomotion
+  year: 2025
+  featured: true
+  status: Humanoids 2025 Oral
+  poster: /assets/img/teasers/cassie-footstep.jpg
+  video: /videos/cassie_walking.mp4
+  short_summary: >-
+    A vision-based reinforcement-learning footstep planner paired with operational
+    space control for Cassie locomotion over unstructured terrain.
+  summary: >-
+    This hierarchical walking framework combines a reinforcement-learning footstep
+    planner with a low-level operational space controller. The policy uses a
+    robot-centric elevation map and an angular-momentum linear inverted pendulum model
+    to adapt footsteps across unstructured terrain. It was evaluated on Cassie in
+    simulation and hardware experiments.
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2508.06779
+    - label: IEEE Xplore
+      url: https://ieeexplore.ieee.org/document/11203087
+
+- slug: terrain-recognition
+  title: Terrain Recognition System for a Wearable Device
+  area: Computer Vision
+  poster: /assets/img/teasers/terrain.jpg
+  short_summary: >-
+    Stereo-camera terrain recognition for adaptive wearable assistance in dense forest environments.
+  summary: >-
+    This project uses a stereo camera to identify safe regions and classify ground
+    types in dense forests, enabling a wearable device to adapt its operating mode to
+    changing terrain.
+  links: []
+
+- slug: ev-fault-diagnosis
+  title: AI-Based Real-Time Monitoring and Fault Diagnosis for EV Reducers
+  area: Machine Learning
+  poster: /assets/img/teasers/fault-diagnosis.jpg
+  short_summary: >-
+    A real-time learning-based system for diagnosing gear damage in electric-vehicle reducers.
+  summary: >-
+    This research developed a real-time model for detecting gear damage in electric
+    vehicle reducers. Wavelet packet decomposition, MFCCs, STFT spectrograms, and
+    Mel-spectrum features were evaluated with convolutional neural networks, reaching
+    98% detection performance on the collected testbed data.
+  links: []
+
+- slug: vision-uav-control
+  title: Vision-Based UAV Control for Following Drones in Complex Environments
+  area: Computer Vision and Control
+  poster: /assets/img/teasers/uav.jpg
+  video: /videos/UAV.mp4
+  short_summary: >-
+    Real-time UAV detection and tracking that combines a one-stage detector with a Siamese network.
+  summary: >-
+    This system combines a one-stage detector with a Siamese tracking network to
+    follow dynamic drones in visually complex scenes at more than 30 fps. A
+    small-object-centric loss and contextual region refinement improve performance
+    under limited visibility.
+  links: []
+

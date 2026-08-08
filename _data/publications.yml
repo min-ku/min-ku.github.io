@@ -1,0 +1,57 @@
+main:
+  - title: "Humanoid Hanoi: Investigating Shared Whole-Body Control for Skill-Based Box Rearrangement"
+    authors: "<strong>Minku Kim</strong>†, Kuan-Chia Chen†, Aayam Shrestha, Li Fuxin, Stefan Lee, and Alan Fern"
+    conference_short: Preprint
+    primary_url: https://arxiv.org/abs/2602.13850
+    image: /assets/img/teasers/humanoid-hanoi.jpg
+    video: /videos/humanoidhanoi.mp4
+    notes: Under Review
+    links:
+      - label: arXiv
+        url: https://arxiv.org/abs/2602.13850
+      - label: Project Page
+        url: https://osudrl.github.io/Humanoid_Hanoi/
+      - label: Code
+        url: https://github.com/osudrl/Humanoid_Hanoi
+
+  - title: "SAGE: Semantic And Geometric Estimation of 6D Object Pose from Multi-View Observations"
+    authors: "<strong>Minku Kim</strong>†, Ho Jin Choi†, and Nadia Figueroa"
+    conference_short: Preprint
+    image: /assets/img/teasers/sage.jpg
+    video: /videos/sage.mp4
+    notes: Under Review
+    links: []
+
+  - title: "ASM-6D: Real-Time 6D Object Pose and Shape Estimation via Active Shape Models and ADMM"
+    authors: "Ho Jin Choi†, <strong>Minku Kim</strong>†, and Nadia Figueroa"
+    conference_short: Preprint
+    image: /assets/img/teasers/asm-6d.jpg
+    video: /videos/asm.mp4
+    notes: Under Review
+    links: []
+
+  - title: "Dynamic-ASM6D: Real-Time 6D Object Pose and Shape Estimation via Active Shape Models and ADMM"
+    authors: "Ho Jin Choi†, Yi-Hsuan Cheng†, <strong>Minku Kim</strong>†, and Nadia Figueroa"
+    conference_short: RSSW
+    conference: Equivariant Systems Workshop at RSS and IEEE-RAS TC Virtual Poster Session, 2025.
+    image: /assets/img/teasers/dynamic-asm6d.jpg
+    video: /videos/pose.mp4
+    links:
+      - label: RSS Workshop
+        url: https://equisystems.github.io/index.html#accepted
+      - label: TC Poster
+        url: https://www.tcoptrob.org/news/2025-07-21/
+
+  - title: Learning a Vision-Based Footstep Planner for Hierarchical Walking Control
+    authors: "<strong>Minku Kim</strong>, Brian Acosta, Pratik Chaudhari, and Michael Posa"
+    conference_short: Humanoids
+    conference: IEEE-RAS International Conference on Humanoid Robots, 2025.
+    primary_url: https://arxiv.org/abs/2508.06779
+    image: /assets/img/teasers/cassie-footstep.jpg
+    video: /videos/cassie_walking.mp4
+    notes: Oral Presentation
+    links:
+      - label: arXiv
+        url: https://arxiv.org/abs/2508.06779
+      - label: IEEE Xplore
+        url: https://ieeexplore.ieee.org/document/11203087
