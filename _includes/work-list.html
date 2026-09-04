@@ -31,7 +31,7 @@
             {% if include.compact == 'true' %}<a href="{{ detail_url | relative_url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
           </h3>
           <p class="work-summary">
-            {% if include.compact == 'true' and item.short_summary %}{{ item.short_summary }}{% else %}{{ item.summary }}{% endif %}
+            {% if include.short_summary == 'true' and item.short_summary %}{{ item.short_summary }}{% elsif include.compact == 'true' and item.short_summary %}{{ item.short_summary }}{% else %}{{ item.summary }}{% endif %}
           </p>
           {% if item.links.size > 0 or item.status %}
           <div class="work-links">

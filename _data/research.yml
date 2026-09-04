@@ -1,28 +1,3 @@
-- slug: humanoid-hanoi
-  title: "Humanoid Hanoi: Investigating Shared Whole-Body Control for Skill-Based Box Rearrangement"
-  area: Humanoid Robotics
-  year: 2026
-  featured: true
-  status: Under Review
-  poster: /assets/img/teasers/humanoid-hanoi.jpg
-  video: /videos/humanoidhanoi.mp4
-  short_summary: >-
-    Long-horizon humanoid box rearrangement through reusable skills and a shared,
-    task-agnostic whole-body controller, validated in simulation and on Digit V3.
-  summary: >-
-    This work studies a skill-based framework for long-horizon humanoid box
-    rearrangement. Reusable skills execute through a shared, task-agnostic
-    whole-body controller, providing a consistent closed-loop interface for task-level
-    composition. Humanoid Hanoi introduces a Tower-of-Hanoi rearrangement benchmark
-    and evaluates autonomous execution in simulation and on the Digit V3 humanoid.
-  links:
-    - label: arXiv
-      url: https://arxiv.org/abs/2602.13850
-    - label: Project Page
-      url: https://osudrl.github.io/Humanoid_Hanoi/
-    - label: Code
-      url: https://github.com/osudrl/Humanoid_Hanoi
-
 - slug: sage
   title: "SAGE: Semantic And Geometric Estimation of 6D Object Pose from Multi-View Observations"
   area: Robot Perception
@@ -43,7 +18,7 @@
   links: []
 
 - slug: asm-6d
-  title: "ASM-6D: Real-Time 6D Object Pose and Shape Estimation via Active Shape Models and ADMM"
+  title: "ASM-6D: Generative Correspondences for Fast Object Pose-Shape Fitting"
   area: Robot Perception
   year: 2026
   status: Under Review
@@ -59,6 +34,31 @@
     geometrically consistent keypoints for learned frontends and uses SDP duality to
     certify global optimality under noise and occlusion.
   links: []
+
+- slug: humanoid-hanoi
+  title: "Humanoid Hanoi: Investigating Shared Whole-Body Control for Skill-Based Box Rearrangement"
+  area: Humanoid Robotics
+  year: 2026
+  featured: true
+  status: CoRL 2026
+  poster: /assets/img/teasers/humanoid-hanoi.jpg
+  video: /videos/humanoidhanoi.mp4
+  short_summary: >-
+    Long-horizon humanoid box rearrangement through reusable skills and a shared,
+    task-agnostic whole-body controller, validated in simulation and on Digit V3.
+  summary: >-
+    This work studies a skill-based framework for long-horizon humanoid box
+    rearrangement. Reusable skills execute through a shared, task-agnostic
+    whole-body controller, providing a consistent closed-loop interface for task-level
+    composition. Humanoid Hanoi introduces a Tower-of-Hanoi rearrangement benchmark
+    and evaluates autonomous execution in simulation and on the Digit V3 humanoid.
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2602.13850
+    - label: Project Page
+      url: https://osudrl.github.io/Humanoid_Hanoi/
+    - label: Code
+      url: https://github.com/osudrl/Humanoid_Hanoi
 
 - slug: dynamic-asm6d
   title: "Dynamic-ASM6D: Real-Time 6D Object Pose and Shape Estimation via Active Shape Models and ADMM"
@@ -142,4 +142,3 @@
     small-object-centric loss and contextual region refinement improve performance
     under limited visibility.
   links: []
-

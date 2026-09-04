@@ -16,6 +16,14 @@ description: Teaching experience, honors and awards, and graduate coursework of 
 
 Assisted with a 120-student course by grading assignments and holding three hours of office hours each week. Created a SLAM assignment using the [KITTI Odometry Dataset](https://www.cvlibs.net/datasets/kitti/eval_odometry.php).
 
+<div class="teaching-media" aria-label="KITTI SLAM assignment results">
+  <video controls autoplay loop muted playsinline preload="metadata" aria-label="KITTI SLAM assignment demonstration">
+    <source src="{{ '/videos/kitti.mp4' | relative_url }}" type="video/mp4">
+    Your browser does not support embedded video.
+  </video>
+  <img src="{{ '/images/02traj.png' | relative_url }}" alt="KITTI sequence 02 SLAM map with estimated and reference trajectories" loading="lazy" width="1024" height="1080">
+</div>
+
 ### MEAM 5100 Design of Mechatronic Systems — Graduate Teaching Assistant
 
 Assisted with teaching and managing a 100-student course by leading recitation sessions, grading assignments, and holding more than three hours of office hours each week.
@@ -29,10 +37,8 @@ Mentored 10 students in the basic track on machine learning, deep learning, and 
 <ul class="award-list">
   <li><span>Oregon State University College of Engineering Scholarship</span><span class="award-year">2025</span></li>
   <li><span>Penn Engineering Outstanding Research Award</span><span class="award-year">2025</span></li>
-  <li><span>CUAI 4th Advanced Track Excellent Completion</span><span class="award-year">2022</span></li>
   <li><span>Chung-Ang University Da Vinci Software Institute Excellence Award</span><span class="award-year">2021</span></li>
   <li><span>Chung-Ang University Da Vinci Software Institute Encouragement Award</span><span class="award-year">2021</span></li>
-  <li><span>Academic Excellence Scholarship</span><span class="award-year">2021</span></li>
 </ul>
 
 ## Graduate Coursework

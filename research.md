@@ -10,5 +10,4 @@ description: Research by Minku Kim in humanoid robotics, legged locomotion, robo
   <p>Humanoid and legged-robot learning, real-time object perception, and vision-based control.</p>
 </div>
 
-{% include work-list.html collection="research" show_video="true" %}
-
+{% include work-list.html collection="research" show_video="true" short_summary="true" %}

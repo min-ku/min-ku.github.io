@@ -307,6 +307,7 @@ main > :first-child > :first-child {
 }
 
 .work-links {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem;
@@ -358,6 +359,25 @@ main > :first-child > :first-child {
   color: var(--text-muted);
   font-variant-numeric: tabular-nums;
   text-align: right;
+}
+
+.teaching-media {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0.9rem 0 1.6rem;
+}
+
+.teaching-media img,
+.teaching-media video {
+  aspect-ratio: 1 / 1;
+  background: #111;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  display: block;
+  height: auto;
+  object-fit: contain;
+  width: 100%;
 }
 
 .site-footer {
