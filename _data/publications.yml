@@ -55,5 +55,7 @@ main:
         url: https://arxiv.org/abs/2508.06779
       - label: IEEE Xplore
         url: https://ieeexplore.ieee.org/document/11203087
+      - label: Project Page
+        url: https://min-ku.github.io/2025Humanoids/
       - label: Semantic Scholar
         url: https://www.semanticscholar.org/paper/Learning-a-Vision-Based-Footstep-Planner-for-Kim-Acosta/128300c0e1f73e9f17fe8cfec0a45f4fde2a8661
