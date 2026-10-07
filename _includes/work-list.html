@@ -26,7 +26,6 @@
         {% endif %}
 
         <div class="work-details">
-          <p class="work-kicker">{{ item.area }}{% if item.year %} · {{ item.year }}{% endif %}</p>
           <h3 class="work-title">
             {% if include.compact == 'true' %}<a href="{{ detail_url | relative_url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
           </h3>

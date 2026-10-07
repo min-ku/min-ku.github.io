@@ -5,7 +5,8 @@
   poster: /assets/img/teasers/cbf.jpg
   video: /videos/cbf.mp4
   short_summary: >-
-    Using control barrier functions.
+    Control barrier functions filter motion commands for a Unitree Go2 quadruped
+    to avoid obstacles detected using AprilTags.
   summary: >-
     This project applies control barrier functions to obstacle identification and
     avoidance on a Unitree Go2 quadruped. AprilTags provide obstacle observations and
