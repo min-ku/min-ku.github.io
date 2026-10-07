@@ -61,8 +61,6 @@
 
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
-          <a href="{{ '/research/' | relative_url }}"{% if page.url contains '/research/' %} aria-current="page"{% endif %}>Research</a>
-          <a href="{{ '/projects/' | relative_url }}"{% if page.url contains '/projects/' %} aria-current="page"{% endif %}>Projects</a>
           <a href="{{ '/misc/' | relative_url }}"{% if page.url contains '/misc/' %} aria-current="page"{% endif %}>Misc</a>
         </nav>
       </header>

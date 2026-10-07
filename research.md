@@ -1,13 +1,17 @@
 ---
-layout: homepage
-title: Research
+layout: null
 permalink: /research/
-description: Research by Minku Kim in humanoid robotics, legged locomotion, robot perception, control, and reinforcement learning.
 ---
-
-<div class="page-heading">
-  <h2>Research</h2>
-  <p>Humanoid and legged-robot learning, real-time object perception, and vision-based control.</p>
-</div>
-
-{% include work-list.html collection="research" show_video="true" short_summary="true" %}
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="0; url={{ '/' | relative_url }}#research">
+    <link rel="canonical" href="{{ '/' | absolute_url }}">
+    <title>Minku Kim</title>
+  </head>
+  <body>
+    <p>Continue to <a href="{{ '/' | relative_url }}#research">the Research section on the homepage</a>.</p>
+  </body>
+</html>

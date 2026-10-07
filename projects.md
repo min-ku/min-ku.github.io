@@ -1,14 +1,17 @@
 ---
-layout: homepage
-title: Projects
+layout: null
 permalink: /projects/
-description: Robotics, control, perception, optimization, and mechatronics projects by Minku Kim.
 ---
-
-<div class="page-heading">
-  <h2>Projects</h2>
-  <p>Selected work in robot control, manipulation, mechatronics, optimization, and applied machine learning.</p>
-</div>
-
-{% include work-list.html collection="projects" show_video="true" %}
-
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="0; url={{ '/' | relative_url }}#projects">
+    <link rel="canonical" href="{{ '/' | absolute_url }}">
+    <title>Minku Kim</title>
+  </head>
+  <body>
+    <p>Continue to <a href="{{ '/' | relative_url }}#projects">the Projects section on the homepage</a>.</p>
+  </body>
+</html>
