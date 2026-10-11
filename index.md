@@ -21,10 +21,11 @@ Previously, I earned an M.S. in Mechanical Engineering and Applied Mechanics fro
 ## News
 
 <ul class="news-list">
+  <li><span class="news-date">2026</span><span>Received CoRL 2026 Travel Award!</span></li>
   <li><span class="news-date">2026</span><span><em>Humanoid Hanoi</em> was accepted to CoRL 2026. See you in Austin, Texas!</span></li>
   <li><span class="news-date">2025</span><span><em>Learning a Vision-Based Footstep Planner for Hierarchical Walking Control</em> was accepted to IEEE-RAS Humanoids as an oral presentation. See you in Seoul, Korea!</span></li>
-  <li><span class="news-date">2025</span><span>Received the Oregon State College of Engineering Scholarship.</span></li>
-  <li><span class="news-date">2025</span><span>Received the Penn Engineering Outstanding Research Award.</span></li>
+  <li><span class="news-date">2025</span><span>Received the Oregon State College of Engineering Scholarship!</span></li>
+  <li><span class="news-date">2025</span><span>Received the Penn Engineering Outstanding Research Award!</span></li>
 </ul>
 
 {% include publications.html %}

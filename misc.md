@@ -35,6 +35,7 @@ Mentored 10 students in the basic track on machine learning, deep learning, and 
 ## Honors & Awards
 
 <ul class="award-list">
+  <li><span>CoRL 2026 Travel Award</span><span class="award-year">2026</span></li>
   <li><span>Oregon State University College of Engineering Scholarship</span><span class="award-year">2025</span></li>
   <li><span>Penn Engineering Outstanding Research Award</span><span class="award-year">2025</span></li>
   <li><span>Chung-Ang University Da Vinci Software Institute Excellence Award</span><span class="award-year">2021</span></li>
