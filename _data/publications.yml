@@ -7,13 +7,16 @@ main:
     notes: Under Review
     links: []
 
-  - title: "ASM-6D: Generative Correspondences for Fast Object Pose-Shape Fitting"
+  - title: "ASM-6D: Fast Certified Pose–Shape Inference with Complete Correspondence Flow Maps"
     authors: "Ho Jin Choi†, <strong>Minku Kim</strong>†, and Nadia Figueroa"
     conference_short: Preprint
+    primary_url: https://asm6d-project.github.io/
     image: /assets/img/teasers/asm-6d.jpg
-    video: /videos/asm.mp4
+    video: /videos/asm6d.mp4
     notes: Under Review
-    links: []
+    links:
+      - label: Project Page
+        url: https://asm6d-project.github.io/
 
   - title: "Humanoid Hanoi: Investigating Shared Whole-Body Control for Skill-Based Box Rearrangement"
     authors: "<strong>Minku Kim</strong>†, Kuan-Chia Chen†, Aayam Shrestha, Li Fuxin, Stefan Lee, and Alan Fern"

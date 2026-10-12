@@ -24,12 +24,12 @@
           </div>
           <div class="author">{{ publication.authors }}</div>
           {% if publication.conference %}<div class="periodical"><em>{{ publication.conference }}</em></div>{% endif %}
-          {% if publication.links.size > 0 or publication.notes %}
+          {% if publication.notes %}<div class="work-status">{{ publication.notes }}</div>{% endif %}
+          {% if publication.links.size > 0 %}
           <div class="links">
             {% for link in publication.links %}
               <a href="{% if link.url contains '://' %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}" class="btn"{% if link.url contains '://' %} target="_blank" rel="noopener"{% endif %}>{{ link.label }}</a>
             {% endfor %}
-            {% if publication.notes %}<span class="work-status">{{ publication.notes }}</span>{% endif %}
           </div>
           {% endif %}
         </div>

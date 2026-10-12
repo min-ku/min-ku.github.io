@@ -18,12 +18,12 @@
   links: []
 
 - slug: asm-6d
-  title: "ASM-6D: Generative Correspondences for Fast Object Pose-Shape Fitting"
+  title: "ASM-6D: Fast Certified Pose–Shape Inference with Complete Correspondence Flow Maps"
   area: Robot Perception
   year: 2026
   status: Under Review
   poster: /assets/img/teasers/asm-6d.jpg
-  video: /videos/asm.mp4
+  video: /videos/asm6d.mp4
   short_summary: >-
     Category-level pose, scale, and shape estimation formulated on SIM(3) and solved
     with a high-throughput matrix ADMM method.
@@ -33,7 +33,9 @@
     high-throughput matrix ADMM solver that exceeds 100 Hz. The pipeline also provides
     geometrically consistent keypoints for learned frontends and uses SDP duality to
     certify global optimality under noise and occlusion.
-  links: []
+  links:
+    - label: Project Page
+      url: https://asm6d-project.github.io/
 
 - slug: humanoid-hanoi
   title: "Humanoid Hanoi: Investigating Shared Whole-Body Control for Skill-Based Box Rearrangement"

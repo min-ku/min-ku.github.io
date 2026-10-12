@@ -13,6 +13,7 @@
   --accent-hover: #8fbcbb;
   --border: #4c566a;
   --note: #d08770;
+  --preview-width: 190px;
 }
 
 * {
@@ -252,8 +253,8 @@ main > :first-child > :first-child {
 .work-row {
   align-items: start;
   display: grid;
-  gap: 1.1rem;
-  grid-template-columns: 215px 1fr;
+  gap: 1rem;
+  grid-template-columns: var(--preview-width) 1fr;
 }
 
 .work-media {
@@ -296,13 +297,10 @@ main > :first-child > :first-child {
 }
 
 .work-title {
-  font-size: 0.98rem;
   margin-bottom: 0.35rem;
 }
 
 .work-summary {
-  font-size: 0.87rem;
-  line-height: 1.52;
   margin-bottom: 0.5rem;
 }
 
@@ -310,7 +308,8 @@ main > :first-child > :first-child {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
+  gap: 0.32rem;
+  margin-top: 0.35rem;
 }
 
 .work-status {
@@ -401,12 +400,12 @@ main > :first-child > :first-child {
 }
 
 .publications ol.bibliography li .abbr {
-  flex: 0 0 190px;
+  flex: 0 0 var(--preview-width);
   height: auto;
   margin: 0;
   padding: 0;
   position: relative;
-  width: 190px;
+  width: var(--preview-width);
 }
 
 .publications ol.bibliography li .abbr .teaser {
@@ -438,12 +437,15 @@ main > :first-child > :first-child {
   padding: 0;
 }
 
+.work-title,
 .publications .title {
   color: var(--text-strong);
   font-size: 0.92rem;
+  font-weight: 700;
   line-height: 1.4;
 }
 
+.work-summary,
 .publications .author,
 .publications .periodical {
   font-size: 0.78rem;
@@ -458,17 +460,20 @@ main > :first-child > :first-child {
   margin-top: 0.35rem;
 }
 
-.publications .links .work-status {
+.publications .pub-details > .work-status {
   line-height: 1.4;
-  margin-left: 0.1rem;
+  margin-left: 0;
+  margin-top: 0.35rem;
 }
 
+.work-links .button-link,
 .publications ol.bibliography li .links a.btn {
   border-color: var(--border);
   border-radius: 4px;
   color: var(--text-strong);
   font-size: 0.68rem !important;
   font-weight: 650;
+  line-height: 1.5;
   padding: 0.12rem 0.42rem;
 }
 

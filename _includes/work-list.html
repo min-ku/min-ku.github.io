@@ -32,12 +32,12 @@
           <p class="work-summary">
             {% if include.short_summary == 'true' and item.short_summary %}{{ item.short_summary }}{% elsif include.compact == 'true' and item.short_summary %}{{ item.short_summary }}{% else %}{{ item.summary }}{% endif %}
           </p>
-          {% if item.links.size > 0 or item.status %}
+          {% if item.status %}<div class="work-status">{{ item.status }}</div>{% endif %}
+          {% if item.links.size > 0 %}
           <div class="work-links">
             {% for link in item.links %}
               <a class="button-link" href="{% if link.url contains '://' %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}"{% if link.url contains '://' %} target="_blank" rel="noopener"{% endif %}>{{ link.label }}</a>
             {% endfor %}
-            {% if item.status %}<span class="work-status">{{ item.status }}</span>{% endif %}
           </div>
           {% endif %}
         </div>
